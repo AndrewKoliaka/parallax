@@ -1,0 +1,84 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.bigimg {
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .7;
+}
+
+.bigimg__border {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -1em;
+    text-align: center;
+}
+
+.bigimg__text {
+    display: inline-block;
+    border: 4px solid white;
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.bigimg--1 {
+    height: 100%;
+    background-image: url('./dist/images/john-towner-177554-min.jpg');
+}
+
+.bigimg--2,
+.bigimg--3,
+.bigimg--4 {
+    height: 50%;
+}
+
+.bigimg--2 {
+    background-image: url('./dist/images/nik-shuliahin-359344-min.jpg');
+}
+
+.bigimg--3 {
+    background-image: url('./dist/images/paul-morris-116514-min.jpg');
+}
+
+.bigimg--4 {
+    background-image: url('./dist/images/rucksack-magazine-386319-min.jpg');
+}
+
+.bigimg--5 {
+    height: 100%;
+    background-image: url('./dist/images/stephanie-fox-78597-min.jpg');
+}
+
+.section {
+    padding: 20px 30px;
+}
+
+.section--dark {
+    background-color: gray;
+    color: white;
+}
+
+.section__title {
+    text-align: center;
+}
+
+.section__text {
+    text-align: left;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .bigimg {
+        background-attachment: scroll;
+    }
+}
